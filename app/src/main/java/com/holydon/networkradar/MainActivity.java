@@ -88,8 +88,8 @@ public class MainActivity extends Activity {
         metrics.setOrientation(LinearLayout.HORIZONTAL);
         LinearLayout left = metricCard("CELL SIGNAL", "-- dBm");
         LinearLayout right = metricCard("LATENCY", "-- ms");
-        signalValue = (TextView) left.getChildAt(1);
-        latencyValue = (TextView) right.getChildAt(1);
+        signalValue = (TextView) left.getChildAt(2);
+        latencyValue = (TextView) right.getChildAt(2);
         LinearLayout.LayoutParams half = new LinearLayout.LayoutParams(0, dp(106), 1);
         half.setMargins(0, 0, dp(6), 0);
         metrics.addView(left, half);
